@@ -7,7 +7,7 @@
     android:minWidth="25px"
     android:minHeight="25px">
     <Button
-        android:text="Button"
+        android:text="vyzdvihnutie"
         android:minHeight="40dp"
         android:id="@+id/button1"
         android:background="#ffffff"
@@ -26,11 +26,11 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp" />
     <Button
-        android:text="Button"
+        android:text="doručenie"
         android:minHeight="40dp"
         android:id="@+id/button1"
         android:background="#ffffff"
-        android:drawableLeft="@drawable/ic_menu_pickup"
+        android:drawableLeft="@drawable/ic_menu_delivery"
         android:drawableRight="@drawable/ic_fwd"
         android:drawablePadding="10dp"
         android:paddingLeft="10dp"
@@ -45,11 +45,11 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp" />
     <Button
-        android:text="Button"
+        android:text="zásielky"
         android:minHeight="40dp"
         android:id="@+id/button1"
         android:background="#ffffff"
-        android:drawableLeft="@drawable/ic_menu_pickup"
+        android:drawableLeft="@drawable/ic_menu_package"
         android:drawableRight="@drawable/ic_fwd"
         android:drawablePadding="10dp"
         android:paddingLeft="10dp"
@@ -63,4 +63,99 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp" />
+    <Button
+        android:text="driver listy"
+        android:minHeight="40dp"
+        android:id="@+id/button1"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_menu_file"
+        android:drawableRight="@drawable/ic_fwd"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left|center_vertical"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    <Button
+        android:text="správy"
+        android:minHeight="40dp"
+        android:id="@+id/button1"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_mail_new"
+        android:drawableRight="@drawable/ic_fwd"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="fill_vertical"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    <Button
+        android:text="synchronizácia"
+        android:minHeight="40dp"
+        android:id="@+id/button1"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_menu_sync"
+        android:drawableRight="@drawable/ic_fwd"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="fill_vertical"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout1">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_height="57.0dp"
+            android:padding="10dp">
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="233.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/lblLogedUser"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left|center"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+            <Button
+                android:text="odhlásiť"
+                android:layout_width="112.5dp"
+                android:layout_height="38.0dp"
+                android:id="@+id/btnLogOut"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="#1e88e5"
+                android:textAllCaps="true"
+                android:padding="3dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="12.0dp" />
+        </RelativeLayout>
+    </RelativeLayout>
 </LinearLayout>

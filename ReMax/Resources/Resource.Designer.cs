@@ -274,6 +274,9 @@ namespace ReMax
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f07000a
+			public const int btnLogOut = 2131165194;
+			
 			// aapt resource value: 0x7f070005
 			public const int btnLogin = 2131165189;
 			
@@ -286,11 +289,20 @@ namespace ReMax
 			// aapt resource value: 0x7f070002
 			public const int inpUserName = 2131165186;
 			
+			// aapt resource value: 0x7f070009
+			public const int lblLogedUser = 2131165193;
+			
 			// aapt resource value: 0x7f070003
 			public const int lblPassword = 2131165187;
 			
 			// aapt resource value: 0x7f070001
 			public const int lblUserName = 2131165185;
+			
+			// aapt resource value: 0x7f070008
+			public const int linearLayout1 = 2131165192;
+			
+			// aapt resource value: 0x7f070007
+			public const int relativeLayout1 = 2131165191;
 			
 			// aapt resource value: 0x7f070000
 			public const int textView1 = 2131165184;

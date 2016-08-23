@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\User.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainMenuActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

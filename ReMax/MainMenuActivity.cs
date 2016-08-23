@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using ReMax.Classes;
 
 namespace ReMax
 {
@@ -38,6 +39,40 @@ namespace ReMax
                 SetContentView(Resource.Layout.Administration);
             };
             ActionBar.AddTab(tab);
-        }        
+
+
+
+            var lblLogedUser = FindViewById<TextView>(Resource.Id.lblLogedUser);
+            lblLogedUser.Text = User.UserName;
+
+            var btnLogOut = FindViewById<Button>(Resource.Id.btnLogOut);
+            btnLogOut.Click += LogOutClick;
+            
+        }
+
+        void LogOutClick(object sender, EventArgs arg)
+        {
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            alert.SetTitle("Odhlási");
+            alert.SetMessage("Skutoène sa chcete odhlási?");
+            alert.SetPositiveButton("ANO", (senderAlert, args) =>
+            {
+                User u = new User();
+                u.Logout();
+                Finish();
+            });
+            alert.SetNegativeButton("NIE", (senderAlert, args) =>
+            {
+                alert.Dispose();
+            });
+
+            Dialog dialog = alert.Create();
+            dialog.Show();
+        }
+
+        public override void OnBackPressed()
+        {
+            LogOutClick(null,null);
+        }
     }
 }
